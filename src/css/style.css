@@ -1,0 +1,90 @@
+@import "./resets.css";
+@import "./variables.css";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: var(--color-white);
+}
+
+.navbar__links,
+.navbar__btns {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: var(--color-dark);
+  font-size: var(--step--1);
+  display: block;
+  padding: 0.75rem 1.5rem;
+  position: relative;
+}
+
+.navbar__link::after {
+  content: "";
+  height: 0.175rem;
+  /* border-radius: 0.1rem; */
+  width: 100%;
+  background-color: var(--color-dark);
+  position: absolute;
+  left: 0;
+  scale: 0 1;
+  transform-origin: left;
+  bottom: 0;
+  transition: 200ms ease;
+}
+
+.navbar__link:hover {
+  opacity: 0.75;
+}
+
+.navbar__link:hover::after {
+  scale: 1;
+}
+
+.navbar__logo {
+  color: var(--color-dark);
+  font-weight: var(--fw-bold);
+  font-size: var(--step-1);
+  text-decoration: none;
+}
+
+.btn-primary {
+  text-decoration: none;
+  font-weight: var(--fw-medium);
+  color: var(--color-dark);
+  border-radius: 5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: whitesmoke;
+  cursor: pointer;
+  font-size: var(--step--1);
+  display: block;
+}
+
+.btn-primary:hover {
+  color: var(--color-white);
+  background-color: var(--color-dark);
+}
+
+.btn-secondary {
+  font-weight: var(--fw-medium);
+  color: var(--color-dark);
+  font-size: var(--step--1);
+  text-decoration: none;
+  outline: 0.125rem solid var(--color-dark);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  display: block;
+}
+
+.btn-secondary:hover {
+  color: var(--color-white);
+  background-color: var(--color-dark);
+}
