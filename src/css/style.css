@@ -48,13 +48,24 @@
   scale: 1;
 }
 
+.navbar__link:focus {
+  outline: 0.125rem dashed var(--color-dark);
+}
+
 .navbar__logo {
   color: var(--color-dark);
   font-weight: var(--fw-bold);
   font-size: var(--step-1);
   text-decoration: none;
+  display: block;
+  padding: 0.75rem 1.5rem;
 }
 
+.navbar__logo:focus {
+  outline: 0.125rem dashed var(--color-dark);
+}
+
+/* Primary Button */
 .btn-primary {
   text-decoration: none;
   font-weight: var(--fw-medium);
@@ -64,7 +75,7 @@
   background-color: whitesmoke;
   cursor: pointer;
   font-size: var(--step--1);
-  display: block;
+  display: inline-block;
 }
 
 .btn-primary:hover {
@@ -72,6 +83,12 @@
   background-color: var(--color-dark);
 }
 
+.btn-primary:focus,
+.btn-secondary:focus {
+  outline: 0.125rem dashed var(--color-dark);
+}
+
+/* Secondary Button */
 .btn-secondary {
   font-weight: var(--fw-medium);
   color: var(--color-dark);
@@ -81,10 +98,40 @@
   padding: 0.75rem 1.5rem;
   border-radius: 5rem;
   cursor: pointer;
-  display: block;
+  display: inline-block;
 }
 
 .btn-secondary:hover {
   color: var(--color-white);
   background-color: var(--color-dark);
+}
+
+/* hero */
+.hero {
+  display: flex;
+  align-items: center;
+  height: 30rem;
+  padding: 6rem;
+}
+
+.hero__content {
+  max-width: 50rem;
+}
+
+.hero-home {
+  background-image: url("../img/hero-home.jpg");
+  background-size: cover;
+  background-position: left;
+}
+
+.hero__title {
+  font-size: var(--step-4);
+  margin-bottom: 1rem;
+  color: var(--color-white);
+}
+
+.hero__text {
+  color: var(--color-white);
+  font-size: var(--step-0);
+  margin-bottom: 1rem;
 }
