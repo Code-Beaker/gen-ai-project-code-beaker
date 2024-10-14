@@ -150,7 +150,7 @@
 
 .section__title {
   font-size: var(--step-2);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .section__text {
@@ -220,4 +220,23 @@
 .section__img {
   border-radius: 0.5rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.section__cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-auto-rows: minmax(auto, 1fr);
+  gap: 2rem;
+}
+
+/* section */
+.join-others {
+  background-color: whitesmoke;
+}
+
+.join-box {
+  background: var(--color-white);
+  padding: 6rem;
+  border-radius: 0.5rem;
 }
