@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GenAI | Responsible AI and computing</title>
+    <title>Products - GenAI</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -19,86 +19,64 @@
       <nav class="navbar">
         <a href="index.html" class="navbar__logo">GenAI&reg;</a>
         <ul class="navbar__links">
+          <li><a href="index.html" class="navbar__link">Home</a></li>
           <li>
-            <a href="index.html" class="navbar__link currentPage">Home</a>
+            <a href="products.html" class="navbar__link">Products</a>
           </li>
-          <li><a href="products.html" class="navbar__link">Products</a></li>
           <li><a href="index.html" class="navbar__link">Solutions</a></li>
-          <li><a href="contact.html" class="navbar__link">Contact</a></li>
+          <li>
+            <a href="contact.html" class="navbar__link currentPage">Contact</a>
+          </li>
         </ul>
         <ul class="navbar__btns">
           <li><a href="index.html" class="btn-primary">Register</a></li>
-          <li><a href="index.html" class="btn-secondary">Login</a></li>
+          <li><a href="contact.html" class="btn-secondary">Login</a></li>
         </ul>
       </nav>
-      <section class="hero-home hero">
+      <section class="hero-contact hero">
         <div class="hero__content">
-          <h1 class="hero__title">
-            GenAI 5o Mini: Making the impossible possible.
-          </h1>
+          <h1 class="hero__title">Let's get to know</h1>
           <p class="hero__text">
-            Upto 82% faster and accurate responses than ChatGPT 4.5 and GPT
-            based models.*
+            Have a discussion or chat with the officials.
           </p>
         </div>
       </section>
     </header>
     <main>
-      <section class="section models">
-        <h2 class="section__title">GenAI models</h2>
-        <div class="models__cards">
-          <div class="models__card plus">
-            <span>
-              <h3 class="models__card--title">Plus</h3>
-            </span>
-          </div>
-          <div class="models__card basic">
-            <span>
-              <h3 class="models__card--title">Basic</h3>
-            </span>
-          </div>
-          <div class="models__card mini">
-            <span>
-              <h3 class="models__card--title">Mini</h3>
-            </span>
-          </div>
-        </div>
-      </section>
-      <section class="section section-imp">
-        <h2 class="section__title">
-          Get answers. Find inspiration. Be productive.
-        </h2>
-        <p class="section__text">
-          GenAI can write. edit. and improve your answers.
-        </p>
-        <div class="img-center">
-          <img class="section__img" src="img/imp-img-1.png" alt="" />
-        </div>
-        <div class="btn-cols">
-          <a href="#" class="btn-primary">Start new chat &rightarrow;</a>
-          <a href="#" class="btn-secondary">Explore &rightarrow;</a>
-        </div>
-      </section>
-      <section class="platforms section">
-        <div class="section__cols">
-          <article class="section__cols--item">
-            <h2 class="section__title">Works on mobile.</h2>
-            <p class="section__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ut
-              itaque eum omnis quae aut animi amet ipsa voluptate nemo.
-            </p>
-          </article>
-          <div class="section__cols--item">
-            <img class="section__img" src="img/Mobile_Download.webp" alt="" />
-          </div>
-        </div>
-      </section>
-      <section class="section section-imp join-others">
-        <div class="join-box">
-          <h2 class="section__title">Join millions of people using GenAI</h2>
-          <div class="btn-cols">
-            <a href="#" class="btn-primary">Download now &rightarrow;</a>
-          </div>
+      <section class="section flagship section-imp">
+        <h2 class="section__title">Consumer info</h2>
+        <div class="contact__cols">
+          <section>
+            <form class="form" action="index.html">
+              <div class="form__item">
+                <label for="name">Enter your name*</label>
+                <input type="text" id="name" />
+              </div>
+              <div class="form__item">
+                <label for="email">Enter your email*</label>
+                <input type="email" id="email" />
+              </div>
+              <div class="form__item">
+                <label for="phone">Enter your phone(optional)</label>
+                <input type="tel" id="phone" />
+              </div>
+              <div class="form__item">
+                <label for="suggestions"
+                  >Enter your suggestions(optional)</label
+                >
+                <textarea name="suggestions" id="suggestions"></textarea>
+              </div>
+              <button type="submit" class="btn-primary">Submit</button>
+            </form>
+          </section>
+          <section class="contact__right">
+            <h3 class="contact__right--title">GenAI Conf 2024</h3>
+            <ul>
+              <li type="square">Product updates</li>
+              <li type="square">New launches</li>
+              <li type="square">Privacy and user data updates</li>
+            </ul>
+          </section>
         </div>
       </section>
     </main>
