@@ -53,8 +53,13 @@
   z-index: -1;
 }
 
-.navbar__link:hover::after {
+.navbar__link:hover::after,
+.currentPage::after {
   scale: 1 1;
+}
+
+.currentPage {
+  color: var(--color-white);
 }
 
 .navbar__link:hover {
@@ -135,6 +140,12 @@
   background-image: url("../img/hero-home.jpg");
   background-size: cover;
   background-position: left;
+}
+
+.hero-products {
+  background-image: url("../img/hero-products.jpg");
+  background-size: cover;
+  background-position: right;
 }
 
 .hero__title {
