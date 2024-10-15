@@ -30,12 +30,15 @@
   font-size: var(--step--1);
   display: block;
   padding: 0.75rem 1.5rem;
+  border-radius: 5rem;
+  overflow: hidden;
   position: relative;
+  transition: 0.25s ease-in-out;
 }
 
 .navbar__link::after {
   content: "";
-  height: 0.175rem;
+  height: 100%;
   /* border-radius: 0.1rem; */
   width: 100%;
   background-color: var(--color-dark);
@@ -44,15 +47,16 @@
   scale: 0 1;
   transform-origin: left;
   bottom: 0;
-  transition: 200ms ease;
-}
-
-.navbar__link:hover {
-  opacity: 0.75;
+  transition: 0.25s ease-in-out;
+  z-index: -1;
 }
 
 .navbar__link:hover::after {
-  scale: 1;
+  scale: 1 1;
+}
+
+.navbar__link:hover {
+  color: var(--color-white);
 }
 
 .navbar__link:focus {
