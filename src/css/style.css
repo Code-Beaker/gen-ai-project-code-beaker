@@ -35,6 +35,7 @@
   overflow: hidden;
   position: relative;
   transition: 0.25s ease-in-out;
+  transition-property: color;
 }
 
 .navbar__link::after {
