@@ -88,18 +88,17 @@
 .btn-primary {
   text-decoration: none;
   font-weight: var(--fw-medium);
-  color: var(--color-primary);
+  color: var(--color-white);
   border-radius: 5rem;
   padding: 0.75rem 1.5rem;
-  background-color: whitesmoke;
+  background-color: var(--color-dark);
   cursor: pointer;
   font-size: var(--step--1);
   display: inline-block;
 }
 
 .btn-primary:hover {
-  color: var(--color-white);
-  background-color: var(--color-primary);
+  opacity: 0.85;
 }
 
 .btn-primary:focus,
@@ -113,7 +112,7 @@
   color: var(--color-dark);
   font-size: var(--step--1);
   text-decoration: none;
-  outline: 0.125rem solid var(--color-primary);
+  /* outline: 0.125rem solid var(--color-primary); */
   padding: 0.75rem 1.5rem;
   border-radius: 5rem;
   cursor: pointer;
@@ -121,8 +120,8 @@
 }
 
 .btn-secondary:hover {
-  color: var(--color-white);
-  background-color: var(--color-primary);
+  /* color: var(--color-white); */
+  background-color: whitesmoke;
 }
 
 /* hero */
