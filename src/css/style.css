@@ -1,6 +1,7 @@
 @import "./resets.css";
 @import "./variables.css";
 
+/* navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -152,6 +153,7 @@
   font-size: var(--step-5);
   margin-bottom: 1rem;
   color: var(--color-white);
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 .hero__text {
