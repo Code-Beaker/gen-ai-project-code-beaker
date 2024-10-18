@@ -491,3 +491,35 @@
   font-size: var(--step-2);
   margin-bottom: 2rem;
 }
+
+/* accordins */
+.accordions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.accordion {
+  text-align: left;
+  display: block;
+  background-color: whitesmoke;
+}
+
+summary {
+  padding: 1rem;
+  user-select: none;
+  cursor: pointer;
+  font-weight: var(--fw-semibold);
+  font-size: var(--step--1);
+  background-color: #ddd;
+}
+
+summary:focus {
+  outline: 0.125rem dotted var(--color-dark);
+}
+
+.accordion__content {
+  padding: 1rem;
+  font-size: var(--step--1);
+}
