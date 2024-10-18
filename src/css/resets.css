@@ -10,7 +10,7 @@ img {
 }
 
 body {
-  font-family: system-ui, Ubuntu, "IBM Plex Sans", -apple-system,
+  font-family: "Inter", system-ui, Ubuntu, "IBM Plex Sans", -apple-system,
     BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Cantarell, "Open Sans",
     "Helvetica Neue", sans-serif;
 }
