@@ -302,6 +302,7 @@
 
 .footer__link:hover {
   color: var(--color-dark);
+  text-decoration: underline;
 }
 
 .footer__link:focus {
